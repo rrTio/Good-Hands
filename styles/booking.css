@@ -1,0 +1,131 @@
+body{
+  background-image: linear-gradient(to bottom, #FF0BAC, #00BEC5);
+  height:100%;
+}
+
+.header{
+  display: flex;
+  background-color: magenta;
+  border-bottom: 1px solid black;
+  box-shadow: 5px 2px 3px 1px black;
+}
+
+.pageTitle{
+    font-size: 30px;
+    font-weight: 600;
+    
+    padding: 15px 0px 15px 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inputs{
+    margin:10px;
+}
+
+.inputs [type='text'], [type='email'], [type='number'], .city, .quantity, [type='text'] {
+    width: 280px;    
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.row{
+  margin: 10px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label{
+  font-weight:700;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.labelAddress{
+  margin-bottom: 10px;
+}
+
+.btnAddItem{
+    width: 45%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: magenta;
+}
+
+.btnBook{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    color: magenta;
+}
+
+.btnBulk{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    color: magenta;
+}
+
+.btnCancel{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    color:crimson;
+}
+
+.btnClaims{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    color:crimson;
+}
+
+.button{
+    margin: 15px;
+    background-color: black;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.row{
+  justify-content: center;
+}
+
+.container{
+  background-color: #ffffff66;
+  border-radius: 10px;
+  padding-top:1%;
+  padding-bottom:1%;
+}
