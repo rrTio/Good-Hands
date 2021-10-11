@@ -87,3 +87,9 @@ a{
 span{
     margin-left: 16px;
 }
+
+.sides{
+    border-right: 2px solid black;
+    background: grey;
+    margin-top: -4px;
+}
