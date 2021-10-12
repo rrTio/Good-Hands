@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css'
 import "../styles/booking.css";
-import '../styles/sidebar.css'
+import '../styles/sidebar.css';
 import Image from 'next/image'
 
 function MyApp({ Component, pageProps }) {

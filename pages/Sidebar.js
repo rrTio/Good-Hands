@@ -1,45 +1,62 @@
 import React from 'react'
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ClearAllIcon from '@material-ui/icons/ClearAll';
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import SyncAltIcon from '@material-ui/icons/SyncAlt';
-import LayersIcon from '@material-ui/icons/Layers';
-import LockIcon from '@material-ui/icons/Lock';
-import EcoIcon from '@material-ui/icons/Eco';
-import Link from 'next/link';
+import Link from "next/link";
+
+
 
 const Sidebar = () => {
-    return (
-      <div className="md:w-3/12 w-6/12 h-screen shadow-2xl sides">
-        <div className=" border-b py-3 mt-1 flex justify-around ">
-          <p className="text-xl  font-semibold">GoodHands</p>
+  
+  return (
+    <div>
+      <div className={"relative min-h-screen md:flex"}>
+        <div
+          className={"bg-gray-800 text-gray-100 flex justify-between md:hidden"}
+        >
+          <center>
+            <h1>GoodHands</h1>
+          </center>
+          <button className="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+            <svg
+              className="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
-        <div className="p-4 space-y-14">
-          <div className="space-y-4">
-            <h1 className="text-black-800">Menu</h1>
 
-            <div className="">
-              <div className="flex p-3 text-black-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
-                <DonutLargeIcon className=" text-black-300" />
-                <Link href="/index">
-                  <a> Dashboard </a>
-                </Link>
-              </div>
-            </div>
+        <div className="sidebar border-r-2 border-black text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+          <h1>
+            <span className="text-2xl font-extrabold text-black">
+              GoodHands
+            </span>
+          </h1>
+          <nav>
+            <Link href="./">
+              <a className="block py-2.5 px-4 rounded transition duration-200 text-black hover:bg-green-300 bg-opacity-100 hover:text-black">
+                Dashboard
+              </a>
+            </Link>
 
-            <div className="">
-              <div className="flex p-3 text-black-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer  ">
-                <ClearAllIcon className="text-black-300" />
-                <Link href="/Booking">
-                  <a> Booking </a>
-                </Link>
-              </div>
-            </div>
-          </div>
+            <Link href="./Booking">
+              <a className="block py-2.5 px-4 rounded transition duration-200 text-black hover:bg-green-300 bg-opacity-100 hover:text-black">
+                Booking
+              </a>
+            </Link>
+          </nav>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Sidebar;

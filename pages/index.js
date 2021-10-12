@@ -8,6 +8,8 @@ import { Router } from 'next/dist/client/router';
 export default function Home() {
   return(
     <div>
+      <title>Dashboard</title>
+      <Sidebar />
     </div>
   )
 }
