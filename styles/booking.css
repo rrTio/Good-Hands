@@ -10,6 +10,7 @@ body{
   box-shadow: 5px 2px 3px 1px black;
 }
 
+
 .pageTitle{
     font-size: 30px;
     font-weight: 600;
@@ -129,8 +130,9 @@ label{
   border-radius: 10px;
   padding-top:1%;
   padding-bottom:1%;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  justify-content: center;
 }
 
 .grid-container {
