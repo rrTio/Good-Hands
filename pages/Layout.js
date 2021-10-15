@@ -3,7 +3,6 @@ import Sidebar from "./Sidebar";
 const Layout = ({children}) => {
     return (  
         <div className='content'>
-            
             {children}
         </div>
     );

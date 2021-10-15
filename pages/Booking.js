@@ -6,17 +6,18 @@ import Sidebar from "./Sidebar";
 const Booking = () => {
     
     return (
-      <div>
+      <div className={'bookingBody'}>
         <div className="grid-container">
-          <div className="grid-item">
+          <div className="grid-item bg-purple-800 border-r-2 border-black">
             <Sidebar />
           </div>
 
           <div className="grid-item">
-            <div className={"header"}>
-              <h1 className={"pageTitle"}>BOOK WITH EASE</h1>
+            <div className={"header-booking"}>
+              <h1 className={"pageTitle"}>Book With Ease</h1>
             </div>
-            <form className={"forms"}>
+            <form className={"forms border-black"}>
+
               <div className={"container col-md-12 mt-3"}>
                 <div className={"row"}>
                   <div className={"col-md-6 leftSide"}>
@@ -199,7 +200,7 @@ const Booking = () => {
                       </label>
                       <input
                         type={"text"}
-                        placeholder={"Item Name"}
+                        placeholder={"Item Value"}
                         name={"description"}
                         id={"description"}
                       />

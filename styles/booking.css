@@ -1,13 +1,14 @@
-body{
-  background-image: linear-gradient(to bottom, #FF0BAC, #00BEC5);
+.bookingBody{
+  background-color: white;
   height:100%;
 }
+h1{
+  color: white;
+}
 
-.header{
+.header-booking{
   display: flex;
-  background-color: magenta;
-  border-bottom: 1px solid black;
-  box-shadow: 5px 2px 3px 1px black;
+  background-color: black;
 }
 
 
@@ -125,7 +126,8 @@ label{
   justify-content: center;
 }
 
-.container{
+@media (min-width:751px){
+  .container{
   background-color: #ffffff66;
   border-radius: 10px;
   padding-top:1%;
@@ -133,6 +135,8 @@ label{
   width: 90%;
   margin: auto;
   justify-content: center;
+}
+  
 }
 
 .grid-container {

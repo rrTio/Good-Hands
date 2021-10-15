@@ -1,7 +1,3 @@
-.contain{
-    height: 100%;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -35,7 +31,7 @@ a{
 
 .nav-menu{
     background-color: #A06AB4;
-    width: 250px;
+    width: 100px;
     height: 100vh;
     display: flex;
     justify-content: center;
